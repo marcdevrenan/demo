@@ -19,4 +19,7 @@ public class Employee {
     private Integer age;
     private String position;
     private String email;
+    @ManyToOne
+    @JoinColumn(name = "department_id", nullable = false)
+    private Department department;
 }
